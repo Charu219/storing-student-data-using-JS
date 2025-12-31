@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>STUDENT FORM</h2>
+
+  <form id="studentForm">
+    <label>Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Age:</label>
+    <input type="number" id="age" required>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <label>Course:</label>
+    <select id="course">
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="React">React</option>
+    </select>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data rows will appear here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
